@@ -1,0 +1,13 @@
+const button = document.getElementById('colorButton');
+const hexDisplay = document.getElementById('hexDisplay');
+
+button.addEventListener('click', function () {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  const hex = '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+
+  document.body.style.backgroundColor = hex;
+  hexDisplay.textContent = hex;
+});
