@@ -1,0 +1,49 @@
+button {
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 30px;
+    height: 75px;
+    width: 255px;
+    transition: 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#passwordDisplay {
+    font-family: monospace;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container {
+    background-color: rgb(138, 169, 194);
+    padding: 30px;
+    border-radius: 6px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(164, 191, 231);
+    font-family: Arial, sans-serif;
+}
+#length {
+    resize: none;
+}
+.container textarea {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(133, 160, 199);
+    border: none;
+    border-radius: 5px;
+}
